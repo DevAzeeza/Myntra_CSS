@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myntra.com</title>
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <header>
@@ -24,11 +28,32 @@
         <a href="#">Beauty</a>
         <a href="#">Studio<sup>New</sup></a>
       </nav>
-      <div class="search_bar">Search</div>
-      <div class="action_bar">Actions</div>
+      <div class="search_bar">
+        <span class="material-symbols-outlined search_icon"> search </span>
+        <input
+          placeholder="Search for products, brands and more"
+          class="search_input"
+        />
+      </div>
+      <div class="action_bar">
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon"> person </span>
+          <span class="action_name">Profile</span>
+        </div>
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon"> favorite </span>
+          <span class="action_name">Wishlist</span>
+        </div>
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon">
+            shopping_bag
+          </span>
+          <span class="action_name">Bag</span>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="banner_container">Banner Container</div>
+      <div class="banner_container"></div>
       <div class="category_heading">Category Heading</div>
       <div class="category_items">Items</div>
     </main>
