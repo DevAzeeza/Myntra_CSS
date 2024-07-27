@@ -12,7 +12,7 @@ header {
   align-items: center;
   background-color: #ffffff;
   height: 80px;
-  border-bottom: ;
+  border-bottom: 4px solid #f4f4f4;
 }
 
 .myntra_home {
@@ -34,6 +34,7 @@ header {
   min-width: 500px;
   justify-content: space-between;
   align-items: center;
+  margin: 0 9px;
 }
 
 .nav_bar a {
@@ -43,6 +44,12 @@ header {
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
+  border-bottom: 3px solid #ffffff; /*the hover but white. to not shake the nav items when hovered*/
+  padding: 27px 0; /*to get red hover to work*/
+}
+
+.nav_bar a:hover {
+  border-bottom: 3px solid #f54e77;
 }
 
 .nav_bar a sup {
@@ -53,7 +60,8 @@ header {
 
 .search_bar {
   height: 40px;
-  min-width: 400px;
+  min-width: 200px;
+  width: 30%;
   display: flex;
   align-items: center;
 }
@@ -104,4 +112,33 @@ header {
   font-weight: 700;
   color: #000;
   padding-top: 10px;
+}
+
+/*Main section*/
+.banner_container {
+  margin: 30px 0;
+}
+
+.banner_image {
+  width: 100%;
+}
+
+.category_heading {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: 0.15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+
+.category_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sale_item {
+  width: 250px;
 }
